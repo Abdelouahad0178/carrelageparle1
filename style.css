@@ -1,0 +1,90 @@
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Conteneur principal */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Style du titre */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style de la vidéo */
+video {
+    width: 100%;
+    max-height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Boutons et sélecteur */
+button, select {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, select:hover {
+    background-color: #0056b3;
+}
+
+/* Zone de texte reconnue et traduite */
+.text-output, textarea {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Zone de texte reconnue avec contenteditable */
+.text-output {
+    height: 150px;
+}
+
+/* Zone de texte traduite (textarea) */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Indicateur de chargement */
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
